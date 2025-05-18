@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faCalculator, 
   faSpinner, 
   faStar, 
   faMoon, 
-  faSun, 
-  faGlobe, 
   faClock, 
   faUser, 
   faMapMarkerAlt, 
@@ -115,7 +113,6 @@ const KundliCalculator = () => {
     }
     
     try {
-      // Generate a more realistic Vedic chart
       await generateChart();
     } catch (err) {
       setError('Error calculating chart. Please ensure all details are correct and try again.');
@@ -275,7 +272,7 @@ const KundliCalculator = () => {
                   placeholder="Enter city, state, country"
                   required
                   aria-required="true"
-                  aria-expanded={showSuggestions}
+                  aria-expanded={showSuggestions ? 'true' : 'false'}
                   aria-controls="location-suggestions"
                 />
                 {loading && formData.birthPlace.length >= 3 ? (
