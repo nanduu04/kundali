@@ -28,7 +28,6 @@ const KundliCalculator = () => {
   const [chart, setChart] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [activeTab, setActiveTab] = useState('birthChart');
   const [locationSuggestions, setLocationSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchTimeout = useRef(null);

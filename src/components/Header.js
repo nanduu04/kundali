@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center text-primary font-bold text-2xl">
+            <a href="/" className="flex items-center text-primary font-bold text-2xl">
               <FontAwesomeIcon icon="star" className="text-accent mr-2" />
               KundliCast
             </a>
